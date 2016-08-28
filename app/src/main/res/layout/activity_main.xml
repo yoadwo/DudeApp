@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ff1a83c3"
+    tools:context="com.gingers.yoad.car_v12.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_layout_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_layout">
+
+            <Button
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_button_save"
+                android:text="@string/res_button_save"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_button_clear_map"
+                android:text="@string/res_id_button_clear_map"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_button_navigate"
+                android:text="@string/res_button_navigate"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <com.google.android.gms.maps.MapView
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/id_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:layout_weight="0.85">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="@string/res_button_photo"
+                android:id="@+id/id_button_take"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="@string/res_button_clear_photo"
+                android:id="@+id/id_button_clear_photo"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="@string/res_button_share"
+                android:id="@+id/id_button_share"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/id_imageView"
+            android:src="@drawable/thumb" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
