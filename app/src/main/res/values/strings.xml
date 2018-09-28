@@ -11,7 +11,7 @@
     <string name="res_button_clear_photo">Clear Photo</string>
     <string name="res_id_button_clear_map">Clear Location</string>
     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
-        AIzaSyDjdjZ9tI0G4S1n9ye14Y8tPMsoncHs2xw
+        AIzaSyAPur1gJB2in8XVgk7jTJst479fbjhTyUc
     </string>
 
     <string name="title_activity_navigation">NavigationActivity</string>
